@@ -1,0 +1,32 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+    background: rgb(167, 155, 148);
+    padding-top: 0.2%;
+    border: 10px;
+}
+.jumbotron {
+    background: rgb(243, 244, 246);
+    color: rgb(104, 158, 184);
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#blinking-text {
+    animation: blink 0.6s infinite;
+}
