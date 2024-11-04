@@ -19,13 +19,14 @@ const Layout = ({ children }) => {
 }, 1000);
 
     return (
-        <div>
+        <div style={{ backgroundColor: "rgb(243, 244, 246)" }}>
             <header>
                 <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-light border-bottom box-shadow">
-                    <h3 id="demo" style={{ fontSize: 45, marginLeft: 100, color: "rgb(255, 90, 96)"}}></h3>
+                    <h3 style={{ fontSize: 25, marginLeft: 100, color: "rgb(0, 0, 0)" }}>Sale ends:&nbsp;</h3>
+                    <h3 id="demo" style={{ fontSize: 25, color: "rgb(0, 0, 0)"}}></h3>
                 </nav>
             </header>
-            <div className="container mt-5">
+            <div className="mt-5">
                 {children}
             </div>
         </div>
