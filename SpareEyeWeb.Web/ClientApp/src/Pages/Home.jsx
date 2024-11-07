@@ -30,6 +30,8 @@ const Home = () => {
         setClick(true);
     }
 
+   
+
 
     if (!click) {
         return (
@@ -162,102 +164,134 @@ const Home = () => {
 
                     <p className="lead d-flex w-80" style={{ fontStyle: 'italic', color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>What past clients who&#39;ve gotten their compliance with us loved:
                         </p>
-                        <center>
-                        <q style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>It was so easy to work with them
-                            </q> 
-                            <div>
-                                <div className="container mt-5" style={{
-                                backgroundColor: "rgba(167, 155, 148, 0.2)",
-                                    padding: 10,
-                                    borderRadius: 10,
-                                    width: 500,
-                                    marginBottom: 10,
-                                    marginTop:10
-                                }}>
-                                    <div className="col-md-10 mb-6">
-                                    <p className="lead d-flex w-80" style={{ fontSize: 15, textAlign: 'left', fontFamily: 'Helvetica' }}>We were having a hard time with compliance and a friend recommended Spare Eye. They delivered everything we wanted and it was so easy to work with them.
-                                        </p>
-                                    <p className="lead d-flex w-80" style={{ fontSize: 12, textAlign: 'right', marginLeft: 175, fontFamily: 'Helvetica' }}>Menachem Geller
-                                            <br />
-                                            Compliance Officer, Four Star Funding
-                                            <br />
-                                            Satisfied Spare Eye client
-                                        </p>
+                                <div >
+                                        <div className="row" style={{ marginTop: 20}}>
+                        <div className="col-md-4 mb-4 offset">
+                                <div className="card shadow-sm h-200" style={{ height: 300, width: 300, borderRadius: 15, backgroundColor: "rgba(104, 158, 184, 0.9)" }}>
+                                    <div className="card-body d-flex flex-column">
+                                        <span style={{ color: "rgb(0,73,106)" }}> &#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                    <div className="d-flex justify-content-center mb-3">
+                                    </div>
+                                    <div style={{ flex: "1 1 auto", overflowY: "auto" }}>
+                                        <center>
+                                            <p>
+                                                <strong style={{ fontFamily: "Georgia, Arial" }}>We were having a hard time with compliance and a friend recommended Spare Eye. They delivered everything we wanted and it was so easy to work with them.</strong>
+                                                </p>
+                                                <p className="lead d-flex w-80" style={{ fontSize: 12, textAlign: 'right', marginLeft: 50, fontFamily: 'Helvetica', color: "rgb(0,73,106)" }}>Menachem Geller
+                                                <br />
+                                                Compliance Officer, Four Star Funding
+                                                <br />
+                                                Satisfied Spare Eye client
+                                            </p>
+                                        </center>
                                     </div>
                                 </div>
                             </div>
-                        <q style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>They just do it for you
-                            </q>
-                            <div className="container mt-5" style={{
-                                backgroundColor: "rgba(167, 155, 148, 0.2)",
-                                padding: 10,
-                                borderRadius: 10,
-                                width: 500,
-                                marginBottom: 10,
-                                marginTop: 10
-                            }}>
-                                <div className="col-md-10 mb-6">
-                                <p className="lead d-flex w-80" style={{ fontSize: 15, textAlign: 'left', fontFamily: 'Helvetica' }}>What I like about Spare Eye is that they don&#39;t say, "You need to do this". They just do it for you.
-                                    </p>
-                                <p className="lead d-flex w-80" style={{ fontSize: 12, textAlign: 'right', marginLeft: 250, fontFamily: 'Helvetica' }}>Bayla Stroh
-                                        <br />
-                                        COO, Exclugo
-                                        <br />
-                                        Satisfied Spare Eye client
-                                    </p>
+                        </div>
+                        <div className="col-md-4 mb-4">
+                                <div className="card shadow-sm h-200" style={{ height: 300, width: 300, borderRadius: 15, backgroundColor: "rgba(104, 158, 184, 0.9)" }}>
+                                    <div className="card-body d-flex flex-column">
+                                        <span style={{ color: "rgb(0,73,106)" }}> &#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                        <div className="d-flex justify-content-center mb-3">
+                                        </div>
+                                        <div style={{ flex: "1 1 auto", overflowY: "auto" }}> 
+                                        <center>
+                                            <p>
+                                                <strong style={{ fontFamily: "Georgia, Arial" }}>What I like about Spare Eye is that they don&#39;t say, "You need to do this". They just do it for you.</strong>
+                                                </p>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p className="lead d-flex w-80" style={{ fontSize: 12, textAlign: 'right', marginLeft: 115, fontFamily: 'Helvetica', color: "rgb(0,73,106)" }}>Bayla Stroh
+                                                <br />
+                                                COO, Exclugo
+                                                <br />
+                                                    Satisfied Spare Eye client
+                                            </p>
+                                        </center>
+                                    </div>
                                 </div>
+                                </div>
+
                             </div>
-                        </center>
-                        <div>
+                            <div className="col-md-1 mb-4">
+                                <div className="card shadow-sm h-200" style={{ height: 300, width: 300, borderRadius: 15, backgroundColor: "rgba(104, 158, 184, 0.9)" }}>
+                                    <div className="card-body d-flex flex-column">
+                                        <span style={{ color: "rgb(0,73,106)" }}> &#9733; &#9733; &#9733; &#9733; &#9733;</span>
+                                        <div className="d-flex justify-content-center mb-3">
+                                        </div>
+                                        <div style={{ flex: "1 1 auto", overflowY: "auto" }}>
+                                            <center>
+                                                <p>
+                                                    <strong style={{ fontFamily: "Georgia, Arial" }}>SpareEye is so quick and on top of things. You don't have to remind them, they remind you and are on top of everything.</strong>
+                                                </p>
+                                                <br />
+                                                <br/>
+                                                <p className="lead d-flex w-80" style={{ fontSize: 12, textAlign: 'right', marginLeft: 50, fontFamily: 'Helvetica', color: "rgb(0,73,106)" }}>Leonora Bediner
+                                                    <br />
+                                                    CEO, Expert Medicaid Consultants LLC
+                                                    <br />
+                                                    Satisfied Spare Eye client
+                                                </p>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
                         </div>
                     </div>
-                <div className="jumbotron p-5" style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}>
+                        <div>
+                        </div>
+                <div className="jumbotron p-5" style={{ backgroundColor: "rgb(255,255,255)" }}>
                 <div className="container">
-                    <span style={{ fontSize: 30, textAlign: 'center', fontFamily: "Georgia, Arial" }}>SpareEye&#39;s 12-Month Cybersecurity Plan
+                        <span className="offset-1" style={{ fontSize: 30, textAlign: 'center', fontFamily: "Georgia, Arial", color: "rgb(0,73,106)" }}>SpareEye&#39;s 12-Month Cybersecurity Plan
                         </span>
-                    <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>What you can expect when you sign up for managed compliance
+                        <p className="lead d-flex w-80 offset-1" style={{ color: "rgb(0,0,0)", fontFamily: "Helvetica" }}>What you can expect when you sign up for managed compliance
                         </p>
-                        <div className="col-md-4 mb-4" style={{ width: 900 }}>
+                        <div className="col-md-4 mb-4 offset-1" style={{ width: 900 }}>
                             <div className="card shadow-sm h-200">
                                 <div className="card-body d-flex flex-column" style={{ maxHeight: 300, overflow: "hidden", backgroundColor: "rgb(104, 158, 184, 0.5)" }}>
                                   
                                 <div>
-                                        <div className="row" style={{ marginTop: 20 }}>
+                                        
                                             <section className="slider_container">
                                                 <section className="slider">
                                                     <div className="slide one" style={{display: 'flex'} }>
-                                                        <MonthlyPlan key={1} id={1} title='Risk Assessment' explanation='Well conduct interviews to find your biggest risks.'  />
-                                                        <MonthlyPlan key={2} id={2} title='Risk Management' explanation='Youll get a detailed report with an outline explaining how to deal with your risks and what to focus on first.' />
-                                                        <MonthlyPlan key={3} id={3} title='Policies and Procedures' explanation='Together, well decide on the safest policies and procedures for your practice.' />
+                                                        <MonthlyPlan key={1} id={1} title='Risk Assessment' explanation='We&#39;ll conduct interviews to find your biggest risks.'  />
+                                                        <MonthlyPlan key={2} id={2} title='Risk Management' explanation='You&#39;ll get a detailed report with an outline explaining how to deal with your risks and what to focus on first.' />
+                                                        <MonthlyPlan key={3} id={3} title='Policies and Procedures' explanation='Together, we&#39;ll decide on the safest policies and procedures for your practice.' />
                                                     </div>
                                                     <div className="slide two" style={{ display: 'flex' }}>
-                                                        <MonthlyPlan key={4} id={4} title='Implement Policies' explanation='Well make it super-easy for you to implement the policies with 13+ copy-paste templates.' />
-                                                        <MonthlyPlan key={5} id={5} title='Vulnerability Scanning' explanation='Well perform a scan to identify security flaws and weaknesses in your network and infrastructure.' />
-                                                        <MonthlyPlan key={6} id={6} title='On-site Security Evaluation' explanation='Well visit your office to perform a physical risk assessment.' />
+                                                        <MonthlyPlan key={4} id={4} title='Implement Policies' explanation='We&#39;ll make it super-easy for you to implement the policies with 13+ copy-paste templates.' />
+                                                        <MonthlyPlan key={5} id={5} title='Vulnerability Scanning' explanation='We&#39;ll perform a scan to identify security flaws and weaknesses in your network and infrastructure.' />
+                                                        <MonthlyPlan key={6} id={6} title='On-site Security Evaluation' explanation='We&#39;ll visit your office to perform a physical risk assessment.' />
                                                     </div>
                                                     <div className="slide three" style={{ display: 'flex' }}>
-                                                        <MonthlyPlan key={7} id={7} title='Employee Training' explanation='Well conduct an interactive live training session with your employees, including a Q&A at the end to address any questions.' />
-                                                        <MonthlyPlan key={8} id={8} title='Follow-Up with Training' explanation='Well send your employees a quiz to make sure they understood the training.' />
-                                                        <MonthlyPlan key={9} id={9} title='Phishing tests' explanation='Well send fake phishing emails to check if anyone in your practice will fall for a scam.' />
+                                                        <MonthlyPlan key={7} id={7} title='Employee Training' explanation='We&#39;ll conduct an interactive live training session with your employees, including a Q&A at the end to address any questions.' />
+                                                        <MonthlyPlan key={8} id={8} title='Follow-Up with Training' explanation='We&#39;ll send your employees a quiz to make sure they understood the training.' />
+                                                        <MonthlyPlan key={9} id={9} title='Phishing tests' explanation='We&#39;ll send fake phishing emails to check if anyone in your practice will fall for a scam.' />
                                                     </div>
                                                     <div className="slide four" style={{ display: 'flex' }}>
-                                                        <MonthlyPlan key={10} id={10} title='Phishing Tests Follow-Up' explanation='Well follow up with anyone in your practice who needs additional training based on phishing test results.' />
-                                                        <MonthlyPlan key={11} id={11} title='Bi-annual Vulnerability Scanning' explanation='Well perform the second yearly scan to identify security flaws and weaknesses in your network and infrastructure.' />
+                                                        <MonthlyPlan key={10} id={10} title='Phishing Tests Follow-Up' explanation='We&#39;ll follow up with anyone in your practice who needs additional training based on phishing test results.' />
+                                                        <MonthlyPlan key={11} id={11} title='Bi-annual Vulnerability Scanning' explanation='We&#39;ll perform the second yearly scan to identify security flaws and weaknesses in your network and infrastructure.' />
                                                         <MonthlyPlan key={12} id={12} title='GLBA FTC Training' explanation='Specific compliance training to ensure all your employees are familiar with their obligations.' />
                                                     </div>
                                                     <div className="slide five" style={{ display: 'flex' }}>
-                                                        <MonthlyPlan key={1} id={1} title='Risk Assessment' explanation='Well conduct interviews to find your biggest risks.' />
-                                                        <MonthlyPlan key={2} id={2} title='Risk Management' explanation='Youll get a detailed report with an outline explaining how to deal with your risks and what to focus on first.' />
-                                                        <MonthlyPlan key={3} id={3} title='Policies and Procedures' explanation='Together, well decide on the safest policies and procedures for your practice.' />
+                                                        <MonthlyPlan key={1} id={1} title='Risk Assessment' explanation='We&#39;ll conduct interviews to find your biggest risks.' />
+                                                        <MonthlyPlan key={2} id={2} title='Risk Management' explanation='You&#39;ll get a detailed report with an outline explaining how to deal with your risks and what to focus on first.' />
+                                                        <MonthlyPlan key={3} id={3} title='Policies and Procedures' explanation='Together, we&#39;ll decide on the safest policies and procedures for your practice.' />
                                                     </div>
                                                 </section>
                                             </section>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div className="jumbotron p-5 rounded-lg mb-4">
                     <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>Get SpareEye Managed Compliance for the lowest we&#39;ll ever offer it.
@@ -270,27 +304,34 @@ const Home = () => {
                                 width: 500
                             }}>
                                 <div className="col-md-4 mb-4">
-                                <div className="card shadow-sm h-200" style={{ borderRadius: 15, width: 480, backgroundColor: "rgba(167, 155, 148, 0.2)" }}>
+                                <div className="card shadow-sm h-200" style={{ borderRadius: 15, width: 450, borderColor: "rgb(0,0,0)", borderWidth: 2}}>
                                         <div className="card-body d-flex flex-column" style={{ overflow: "hidden" }}>
-                                        <h3 className="text-center" style={{ fontFamily: "Georgia, Arial", color: "rgb(255, 90, 96)" } }>
-                                                Managed Compliance <br />Subscription Plan</h3>
-                                        <span style={{ textAlign: 'center', color: "rgb(104, 158, 184)" }}>$497/month</span>
-                                            <br />
-                                        <b style={{ color: "rgb(104, 158, 184)" } }>Includes:</b>
-                                        <ul style={{ color: "rgb(167, 155, 148)" }}>
-                                                <p><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
-                                                    Complete WISP</p>
-                                                <p><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
-                                                    Employee Trainings</p>
-                                                <p><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
-                                                    Risk Assessment</p>
-                                            </ul>
+                                        <h3 className="text-center" style={{ fontFamily: "Georgia, Arial", fontSize: 25 } }>
+                                            Managed Compliance <br />Subscription Plan</h3>
+                                        <br />
+                                                <br/>
+                                        <b style={{ textAlign: 'center', fontSize: 40, color: "rgb(255, 90, 96)" }}>$497/month</b>
+                                        <br />  
+                                        <b style={{fontSize: 22, marginLeft: 105} }>Includes:</b>
+                                        <ul style={{ color: "rgb(0,0,0)", fontSize: 20, marginLeft: 80 }}>
+                                            <span style={{ color: "#28A745" }}>&#10003;&nbsp;</span><span>Complete WISP</span>
+                                                <br/>
+                                            <span style={{ color: "#28A745" }}>&#10003;&nbsp;</span>
+                                            <span>Employee Trainings</span>
+                                                <br/>
+                                            <span style={{ color: "#28A745" }}>&#10003;&nbsp;</span>
+                                            <span>Risk Assessment</span>
+                                            <br/>
+                                        </ul>
+                                                <br/>
                                             <Link to='/'
-                                                className="btn btn-outline-danger w-50 offset-3" style={{ marginTop: 10, fontFamily: "Helvetica" }} onClick={onClick}>Protect my practice
-                                            </Link>
-                                            <br />
-                                        <center id="blinking-text" style={{ color: "rgb(104, 158, 184)" }} >Offer expires in {Math.floor((new Date("Jan 5, 2030 15:37:25").getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days</center>
-                                        </div>
+                                                className="btn btn-outline-dark w-50 offset-3" style={{ marginTop: 10, fontFamily: "Helvetica" }} onClick={onClick}>Protect my practice
+                                        </Link>
+                                        <br />
+                                            <br/>
+                                        <center id="blinking-text" style={{ color: "rgb(255, 90, 96)", fontSize: 22 }} >Offer expires in {Math.floor((new Date("Jan 5, 2030 15:37:25").getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days</center>
+                                        <br />
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -300,43 +341,43 @@ const Home = () => {
                     <p className="lead d-flex w-80" style={{ fontFamily: "Helvetica" } }>SpareEye is more comprehensive than any other compliance offer.
                         </p>
                         <div>
-                        <table className="table table-border" style={{fontFamily: "Helvetica"} }>
-                                <thead>
+                        <table style={{ fontFamily: "Helvetica", backgroundColor: "rgb(243, 244, 246)" } }>
+                               
                                 <tr>
-                                    <th style={{ color: "rgb(255, 90, 96)", backgroundColor: "rgba(167, 155, 148, 0.3)" }}>Other Compliance Offers</th>
-                                        <th style={{ color: "rgb(255, 90, 96)", backgroundColor:"rgba(104, 158, 184, 0.7)"  }}>SpareEye Managed Compliance</th>
+                                    <th><b>Other Compliance Offers</b></th>
+                                    <th><b>SpareEye Managed Compliance</b></th>
                                     </tr>
-                                </thead>
+                                
                                 <tbody>
                                     <tr>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.3)" } }>&#10003; Some offer a WISP template (Written Information Security Plan)</td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" } }>&#10003; Creates the WISP for you</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Some offer a WISP template (Written Information Security Plan)</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Creates the WISP for you</td>
                                     </tr>
                                     <tr>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.3)" }}>&#10003; Some may customize the WISP for your practice</td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}>&#10003; Customizes your WISP to your unique practice</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Some may customize the WISP for your practice</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Customizes your WISP to your unique practice</td>
                                     </tr>
                                     <tr>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.3)" }}>&#10003; Some may offer risk assessments</td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}>&#10003; Always includes risk assessments, vulnerability scanning, and tests</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Some may offer risk assessments</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Always includes risk assessments, vulnerability scanning, and tests</td>
                                     </tr>
                                     <tr>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.3)" }}>&#10003; Some may offer recommendations</td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}>&#10003; Always offers tech and security recommendations</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Some may offer recommendations</td>
+                                    <td><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span> Always offers tech and security recommendations</td>
                                     </tr>
                                     <tr>
-                                        <td></td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
+                                    <td></td>
+                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span>
                                             <b>Templates</b> that make all aspects of compliance easy</td>
                                     </tr>
                                     <tr>
-                                        <td></td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
+                                    <td></td>
+                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color: "#347c17" } }>&#10003;&nbsp;</span>
                                             <b>Employee Training</b> that ensures you&#39;re actually protected from the most common risks</td>
                                     </tr>
                                     <tr>
-                                        <td></td>
-                                    <td style={{ backgroundColor: "rgba(104, 158, 184, 0.7)" }}><BsCheckCircleFill style={{ color: "#28A745", marginRight: 10 }} />
+                                    <td></td>
+                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color:"#347c17" }}>&#10003;&nbsp;</span>
                                             <b>Follow-Up Testing</b> to make sure your risks have been addressed</td>
                                     </tr>
                                 </tbody>
