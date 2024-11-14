@@ -37,71 +37,112 @@ const Home = () => {
         return (
             
             <>
-                <div className="jumbotron p-5 rounded-lg mb-4 container">
+                <div className="jumbotron p-5 rounded-lg" style={{ backgroundColor: "rgb(0,0,0)" }}>
+                <div className="container">
                     <br />
                     <br/>
-                        <h1 className="display-4 d-flex w-100 justify-content-center align-self-center" style={{ fontFamily: "Georgia, Arial" } }>Keep your head in the sand about cybersecurity. We&#39;ll do the looking out for you.</h1>
-                        <p className="lead d-flex w-80" style={{ textAlign: 'center', color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>SpareEye secures compliance with cybersecurity guidelines for CPAs who are too busy to worry about compliance. You never have to worry about penalty fines or fraudulent returns either.</p>
+                    <p className="display-4 " style={{ fontFamily: "Georgia, Arial", color: "rgb(255,255,255)" }}>Keep your head in the sand about cybersecurity.<b style={{ color: "#4169E1"} }> We&#39;ll do the looking out for you.</b></p>
+                        <br />
+                        <p className="lead d-flex w-80" style={{ textAlign: 'center', color: "rgb(255, 255, 255)", fontFamily: "Helvetica", fontSize: 22 }}>SpareEye secures compliance with cybersecurity guidelines for CPAs who are too busy to worry about compliance. You never have to worry about penalty fines or fraudulent returns either.</p>
                         <Link to='/'
-                            className="btn btn-outline-danger w-25 offset-4" style={{ marginTop: 10, fontFamily: "Helvetica" }} onClick={onClick}>Secure my compliance
+                            className="btn btn-danger w-25 offset-4" style={{ marginTop: 10, fontFamily: "Helvetica", color: "rgb(0,0,0)" }} onClick={onClick}>Secure my compliance
                     </Link>
                     <br />
+                    </div>
                 </div>
-                <div className="jumbotron" style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}>
+                <div className="jumbotron">
                     <div className="container">
                         <br />
                         <br />
                         <br />
                         <br />
-                        <span style={{ fontSize: 38, fontFamily: "Georgia, Arial" }}>Why be compliant with cybersecurity laws for accountants?</span>
+                        <div className="offset-2">
+                            <p style={{ fontSize: 38, fontFamily: "Georgia, Arial", textAlign: 'center', marginRight: 200, fontWeight: 'bold'}}>Why be compliant with cybersecurity laws for accountants?</p>
+                    </div>
                         <br />
-                    <br/>
-                        <ul>
-                            <li style={{ fontSize: 25, fontFamily: "Helvetica" }}>Fines</li>
-                        
-                        <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>Aside from the IRS Pub 4557, the latest FTC guidelines under the Gramm-Leach-Bliley Act have gone into penalty phase since June 2023.
-                                If you&#39;re found non-compliant, you could face up to $43,000 in fines per day.</p>
-                            <li style={{ fontSize: 25, fontFamily: "Helvetica" }}> Audits</li>
-                       
-                        <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>Once the audit happens, you can&#39;t prepare anymore.
-                                You need to be compliant now if you want a clean audit later. Running after the paper trail during an actual audit swallows all your resources, creates endless headaches, and often isn&#39;t enough to actually prevent penalties in case of previous noncompliance.
-                            </p>
-                        </ul>
+                        <br />
+                        <div className="row" style={{ marginTop: 10}}>
+                            <div className="col-md-4 mb-4 offset-2">
+                                <span style={{ fontWeight: 'bold', fontSize: 22 }}>&nbsp;&nbsp;&nbsp;&nbsp;Fines</span>
+                                <div className="card h-200" style={{ height: 300, width: 340, borderRadius: 30, borderWidth: 4, borderColor: "rgb(255, 90, 96)" }}>
+                                <div className="card-body d-flex flex-column">
+                                    <div className="d-flex justify-content-center mb-3">
+                                    </div>
+                                    <div style={{ flex: "1 1 auto", overflowY: "auto" }}>
+                                        <center>
+                                            <p>
+                                                <strong style={{ fontFamily: "Georgia, Arial" }}>Aside from the IRS Pub 4557, the latest FTC guidelines under the Gramm-Leach-Bliley Act have gone into penalty phase since June 2023.
+                                                    If you&#39;re found non-compliant, you could face up to $43,000 in fines per day</strong>
+                                            </p>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div className="col-md-4 mb-4 offset">
+                                <span style={{ fontWeight: 'bold', fontSize: 22 }}>&nbsp;&nbsp;&nbsp;&nbsp;Audits</span>
+                                <div className="card h-200" style={{ height: 300, width: 340, borderRadius: 30, borderWidth: 4, borderColor: "rgb(255, 90, 96)" }}>
+                                <div className="card-body d-flex flex-column">
+                                    <div className="d-flex justify-content-center mb-3">
+                                    </div>
+                                    <div style={{ flex: "1 1 auto", overflowY: "auto" }}>
+                                        <center>
+                                            <p>
+                                                <strong style={{ fontFamily: "Georgia, Arial" }}>Once the audit happens, you can&#39;t prepare anymore.
+                                                    You need to be compliant now if you want a clean audit later. Running after the paper trail during an actual audit swallows all your resources, creates endless headaches, and often isn&#39;t enough to actually prevent penalties in case of previous noncompliance.
+                                            </strong>
+                                            </p>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                         <br />
                         <br />
                         <br />
                         <br/>
                     </div>
                 </div>
-                <div className="jumbotron" style={{ backgroundColor: "rgba(104, 158, 184, 0.9)" }}>
-                <div className="container">
+                <div className="container" style={{ backgroundColor: "rgba(82, 113, 255, 0.5)", borderRadius: 20, textAlign: 'center' }} >
                         <br/>
-                        <span style={{ fontSize: 30, color: "rgb(0,73,106)", fontFamily: "Georgia, Arial" }}>On the other hand, following compliance laws protects your clients&#39; financial records from hackers and cybercriminals.
+                        <span style={{ fontSize: 25, fontFamily: "Georgia, Arial", fontWeight: 'bold' }}>On the other hand, following compliance laws protects your clients&#39; financial records from hackers and cybercriminals.
                     </span>
-                    </div>
-                <div className="container"><br/>
-                        <p className="lead d-flex w-80" style={{ color: "rgb( 243, 244, 246)", fontFamily: "Helvetica" }}>Incidence of identity theft, tax data breaches, and rerouted refunds are on a steep rise.
+                    <br />
+                  <br/>
+                        <p style={{ fontFamily: "Helvetica"}}>Incidence of identity theft, tax data breaches, and rerouted refunds are on a steep rise.
                         </p>
-                        <p className="lead d-flex w-80" style={{ color: "rgb( 243, 244, 246)", fontFamily: "Helvetica" }}>So steep there&#39;s no data available to measure the rise yet, though experts estimate 2024 will see the biggest jump ever.
+                        <p style={{ fontFamily: "Helvetica"}}>So steep there&#39;s no data available to measure the rise yet, though experts estimate 2024 will see the biggest jump ever.
                         </p>
-                        <p className="lead d-flex w-80" style={{ color: "rgb( 243, 244, 246)", fontFamily: "Helvetica" }}>But maybe this doesn&#39;t apply to you.
+                    <p style={{ fontFamily: "Georgia, Arial", fontSize: 15 }}>But maybe this doesn&#39;t apply to you.
                         </p>
-                        <p className="lead d-flex w-80" style={{ color: "rgb( 243, 244, 246)", fontFamily: "Georgia, Arial" }}>You might ask:
+                        <p style={{ fontFamily: "Georgia, Arial", fontSize: 15 }}>You might ask:
                         </p>
-                        <span style={{ fontSize: 30, fontFamily: "Georgia, Arial", color: "rgb(0,73,106)" }}>As a successful CPA, will hackers target you?
-                        </span>
+                        <span style={{ fontFamily: "Georgia, Arial", fontSize: 25, fontWeight: 'bold' }}>As a successful CPA, will hackers target you?
+                    </span>
+                    <br />
+                    <br/>
+                </div>
+                <div>
                         <br />
-                        <br/>
-                        <span style={{ fontSize: 30, fontFamily: "Georgia, Arial", color: "rgb(0,73,106)" }}>Don&#39;t be the accountant in the next frantic post.
+                    <br />
+                    <div className="container" style={{textAlign: 'center'} }>
+                        <span style={{ fontSize: 30, fontFamily: "Georgia, Arial"  }}>Don&#39;t be the accountant in the next frantic post.
                             </span>
-                            <br/>
-                        <q style={{ color: "rgb(243, 244, 246)", fontFamily: "Helvetica" }}>My CPA&#39;s inuit was hacked and thus so was I...
+                        <br />
+                        <br />
+                        <div className="card h-200" style={{ borderRadius: 30, borderWidth: 2, borderColor: "rgb(0,0,0)", width: 1000, marginLeft: 75 }}>
+                            <br />
+                        <br/>
+                            <q style={{ fontFamily: "monospace" }}>My CPA&#39;s inuit was hacked and thus so was I...
                             </q>
+                            <br />
                             <br/>
-                        <q style={{ color: "rgb(243, 244, 246)", fontFamily: "Helvetica" }}>Our CPA says she was hacked and someone basically changed the routing numbers for multiple refunds...
+                        <q style={{ fontFamily: "monospace" }}>Our CPA says she was hacked and someone basically changed the routing numbers for multiple refunds...
                         </q>
                         <br />
-                            <br/>
+                            <br />
+                        </div>
                         <p className="lead d-flex w-80" style={{ color: "rgb(243, 244, 246)", fontFamily: "Helvetica" }}>Look at the facts:
                         </p>
                         <ul style={{ fontFamily: "Helvetica", color: "rgb(0,73,106)" } }>
@@ -109,61 +150,79 @@ const Home = () => {
                             <li>Financial records contain valuable information such as SS numbers.</li>
                             <li>Hackers use SS numbers yearly to file fraudulent returns and reroute the refunds.</li>
                         </ul>
-                        <p className="lead d-flex w-80" style={{ fontFamily: "Helvetica", color: "rgb(0,73,106)" }}>Hacking CPAs is profitable for fraudsters - and without safeguards in place, it&#39;s easy to do.</p>
+                        <p style={{ fontFamily: "Helvetica", fontWeight: 'bold'}}>Hacking CPAs is profitable for fraudsters - and without safeguards in place, it&#39;s easy to do.</p>
                         <div style={{ textAlign: 'center' } }>
                         <Link to='/'
-                        className="btn btn-light" style={{ marginTop: 10, fontFamily: "Helvetica" }} onClick={onClick}>Protect my practice from hackers and audits
+                        className="btn btn-danger" style={{ marginTop: 10, fontFamily: "Helvetica", color: "rgb(255,255,255)" }} onClick={onClick}>Protect my practice from hackers and audits
                             </Link>
+                            </div>
                         </div>
                         <br />
                         <br/>
                 </div>   
-                </div>  
                
-                <div className="jumbotron p-5 rounded-lg mb-4">
-                    <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>You&#39;ve seen scam alerts from friends. Heard hacker reports in the news.
+                <div className="jumbotron p-5 rounded-lg" style={{ backgroundColor: "rgb(0,0,0)" }}>
+                    <div className="container" style={{ backgroundColor: "rgb(255,255,255)", textAlign: 'center' }}>
+                    <br/>
+                    <span style={{ fontSize: 25, fontFamily: "Georgia, Arial" }}>You&#39;ve seen scam alerts from friends. Heard hacker reports in the news.
+                        <br/> Like everyone in cyberspace, you know that there are darker elements on the web.
                         </span>
-                    <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>Like everyone in cyberspace, you know that there are darker elements on the web.
-                        </p>
-                    <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>But as a CPA, it&#39;s not just $$$ on the line.
-                        </p>
-                    <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>It&#39;s:
-                        </p>
-                        <ul>
-                        <li style={{ fontSize: 25, fontFamily: "Georgia, Arial" }}> Your reputation</li>
-                        <li style={{ fontSize: 25, fontFamily: "Georgia, Arial" }}> Your clients trust</li>
-                        <li style={{ fontSize: 25, fontFamily: "Georgia, Arial" }}> Your accounting practice</li>
-                        </ul>
-                    <b className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>What took years to build can vanish in weeks with one crafty hackers success.
+                        <br />
+                        <br />
+                        <br/>
+                    <b style={{ fontFamily: "Helvetica" }}>But as a CPA, it&#39;s not just $$$ on the line.
                         </b>
-                    <p className="lead d-flex w-80" style={{ fontFamily: "Helvetica", color: "rgb(167, 155, 148)" } }>Are you an easy target?
+                        <br />
+                        <br/>
+                    <p style={{ fontFamily: "Helvetica" }}>It&#39;s:
+                        </p>
+                        <b>Your Reputation&nbsp;&nbsp;&nbsp;&nbsp; Your clients' trust&nbsp;&nbsp;&nbsp;&nbsp; Your accounting practice</b>
+                        <br />
+                        <br/>
+                    <p  style={{ fontFamily: "Helvetica" }}>What took years to build can vanish in weeks with one crafty hackers success.
+                       <br/> Are you an easy target?
                     </p>
                     <div style={{textAlign: 'center'} }>
                         <Link to='/'
                         className="btn btn-outline-danger w-25" style={{ marginTop: 10, fontFamily: "Helvetica" }} onClick={onClick}>Get protected
-                        </Link>
+                            </Link>
+                        </div>
+                        <br />
+                        <br/>
                     </div>
                     </div>
-                <div className="jumbotron p-5 rounded-lg mb-4" style={{ backgroundColor: "rgba(104, 158, 184, 0.9)" }}>
-                <div className="container">
-                        <span style={{ fontSize: 30, fontFamily: "Georgia, Arial", color: "rgb(0,73,106)" }}>Accounting in 2024 isn&#39;t accounting in 2014
+                <div className="jumbotron p-5 rounded-lg mb-4">
+                    <div className="container" style={{ textAlign: 'center' }}>
+                        <hr className="hr"></hr>
+                    <br/>
+                        <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>Accounting in 2024 isn&#39;t accounting in 2014
                         </span>
-                        <p className="lead d-flex w-80" style={{ fontSize: 15, color: "rgb(243, 244, 246)", fontFamily: "Helvetica" }}>A basement flood could wipe out CPA records decades ago. A data breach on your computer systems today is worse.
+                        <br />
+                        <br/>
+                        <p style={{ fontFamily: "Helvetica", fontSize: 20 }}>A basement flood could wipe out CPA records decades ago. A <br/>data breach on your computer systems today is worse.
                         </p>
+                        <br/>
+                        <hr className="hr"></hr>
                     </div>
                 </div>
-                <div className="jumbotron p-5 rounded-lg mb-4">
-                    <p className="lead d-flex w-80" style={{ fontStyle: 'italic', color: "rgb(167, 155, 148)", fontSize: 40, fontFamily: "Georgia, Arial" }}>Who we are:
+                <div className="jumbotron p-5 rounded-lg" style={{ backgroundColor: "rgb(0,0,0)", textAlign: 'center' }}>
+                    <p  style={{ color: "rgb(255,255,255)", fontSize: 40, fontFamily: "Georgia, Arial" }}>Who we are:
                         </p>
-                    <span style={{ fontSize: 28, fontFamily: "Georgia, Arial" }}>SpareEye is a cybersecurity firm that specializes in compliance.
+                    <span style={{ fontSize: 28, fontFamily: "Georgia, Arial", color: "#E3B39A" }}>SpareEye is a cybersecurity firm that specializes in compliance.
                         </span>
-                    <p className="lead d-flex w-80" style={{ fontFamily: "Helvetica" }}>We&#39;ve helped dozens of businesses secure their compliance with a completely managed service model. Our Managed Compliance subscription model is unique to SpareEye.
-                        </p>
-                    <p className="lead d-flex w-80" style={{ fontSize: 15, fontFamily: "Helvetica" }}>Want to ask us a question? Sure! Email&nbsp; <b>info@spareeye.com</b>
-                        </p>
-
-                    <p className="lead d-flex w-80" style={{ fontStyle: 'italic', color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>What past clients who&#39;ve gotten their compliance with us loved:
-                        </p>
+                    <br />
+                        <br/>
+                    <p style={{ fontFamily: "Helvetica", color: "rgb(255,255,255)", }}>We&#39;ve helped dozens of businesses secure their compliance<br/> with a completely managed service model. Our Managed<br/> Compliance subscription model is unique to SpareEye.
+                    </p>
+                        <br/>
+                    <b style={{ fontSize: 15, fontFamily: "Helvetica", color: "rgb(255,255,255)", }}>Want to ask us a question? Sure! Email&nbsp; <b>info@spareeye.com</b>
+                    </b>
+                        <br/>
+                </div>
+                <div className="container" style={{ textAlign: 'center' }}>
+                <br/>
+                    <b  style={{ fontStyle: 'italic', fontFamily: "Helvetica" }}>What past clients who&#39;ve gotten their compliance with us loved:
+                        </b>
                                 <div >
                                         <div className="row" style={{ marginTop: 20}}>
                         <div className="col-md-4 mb-4 offset">
@@ -293,10 +352,11 @@ const Home = () => {
                     </div>
                     
                 </div>
-                <div className="jumbotron p-5 rounded-lg mb-4">
+                <div className="jumbotron p-5 rounded-lg" style={{ backgroundColor: "rgb(255, 90, 96)" }}>
+                    <div className="container" style={{backgroundColor: "rgb(255,255,255)", textAlign: 'center'} }>
                     <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>Get SpareEye Managed Compliance for the lowest we&#39;ll ever offer it.
                         </span>
-                    <p className="lead d-flex w-80" style={{ fontSize: 15, color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>Here&#39;s the pricing breakdown:
+                    <p style={{ fontSize: 15, fontFamily: "Helvetica" }}>Here&#39;s the pricing breakdown:
                         </p>
                         <div>
                             <div className="container mt-5" style={{
@@ -330,18 +390,23 @@ const Home = () => {
                                         <br />
                                             <br/>
                                         <center id="blinking-text" style={{ color: "rgb(255, 90, 96)", fontSize: 22 }} >Offer expires in {Math.floor((new Date("Jan 5, 2030 15:37:25").getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} days</center>
-                                        <br />
+                                            <br />
                                     </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <br/>
+                            </div>
+                    </div>
+                    </div>
+                    <div className="jumbotron p-5" style={{ backgroundColor: "rgb(255,255,255)" }}>
+                        
                     <span style={{ fontSize: 30, color: "rgb(255, 90, 96)", fontFamily: "Georgia, Arial" }}>The only done-for-you complete compliance package.
                         </span>
                     <p className="lead d-flex w-80" style={{ fontFamily: "Helvetica" } }>SpareEye is more comprehensive than any other compliance offer.
                         </p>
                         <div>
-                        <table style={{ fontFamily: "Helvetica", backgroundColor: "rgb(243, 244, 246)" } }>
+                        <table style={{ fontFamily: "Helvetica" } }>
                                
                                 <tr>
                                     <th><b>Other Compliance Offers</b></th>
@@ -367,44 +432,51 @@ const Home = () => {
                                     </tr>
                                     <tr>
                                     <td></td>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span>
+                                        <td style={{ backgroundColor: "rgb(243, 244, 246)" }}><span style={{ color: "#347c17" }}>&#10003;&nbsp;</span>
                                             <b>Templates</b> that make all aspects of compliance easy</td>
                                     </tr>
                                     <tr>
                                     <td></td>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color: "#347c17" } }>&#10003;&nbsp;</span>
+                                        <td style={{ backgroundColor: "rgb(243, 244, 246)" }}><span style={{ color: "#347c17" } }>&#10003;&nbsp;</span>
                                             <b>Employee Training</b> that ensures you&#39;re actually protected from the most common risks</td>
                                     </tr>
                                     <tr>
                                     <td></td>
-                                    <td style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}><span style={{ color:"#347c17" }}>&#10003;&nbsp;</span>
+                                        <td style={{ backgroundColor: "rgb(243, 244, 246)" }}><span style={{ color:"#347c17" }}>&#10003;&nbsp;</span>
                                             <b>Follow-Up Testing</b> to make sure your risks have been addressed</td>
                                     </tr>
                                 </tbody>
-                            </table>
-                    </div>
-                    </div>
-                    <div className="jumbotron p-5" style={{ backgroundColor: "rgba(167, 155, 148, 0.2)" }}>
+                                </table>
+                            </div>
+                            </div>
+                    
+                    
+                <div className="jumbotron p-5" style={{ backgroundColor: "rgba(30, 215, 96,0.2)", textAlign: 'center'}}>
                         <div className="container">
-                    <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>Without SpareEye Managed Compliance, you face
+                    <span style={{ fontSize: 30, fontFamily: "Georgia, Arial" }}>Without SpareEye Managed Compliance, you face<br/>
                             noncompliance penalties and risks to sensitive data
                         </span>
-                    <p className="lead d-flex w-80" style={{ color: "rgb(167, 155, 148)", fontFamily: "Helvetica" }}>SpareEye Managed Compliance covers every aspect of compliance.
+                        <br />
+                        <br/>
+                    <p  style={{ fontFamily: "Helvetica" }}>SpareEye Managed Compliance covers every aspect of compliance.
                         </p>
                     <ul style={{ fontFamily: "Helvetica" } }>
                             <li>Addressing risks that could lead to a data breach</li>
+                            <br/>
                             <li>Preventing penalties for non-compliance</li>
+                            <br/>
                             <li>Completing your WISP in time to renew your PTIN with confidence.</li>
+                            <br/>
                         </ul>
-                    <p className="lead d-flex w-80" style={{ fontSize: 15, color: "rgb(255, 90, 96)", fontFamily: "Georgia, Arial" }}>
+                    <b style={{ fontSize: 15, fontFamily: "Georgia, Arial" }}>
 
                             Get compliance off your head, off your plate, and off your list of worries -
                             Give it over to us.
-                        </p>
+                        </b>
                         
                     </div>
                 </div>
-                <div className="jumbotron p-3" style={{ backgroundColor: "rgba(0,73,106, 0.7)" }}>
+                <div className="jumbotron p-3" style={{ backgroundColor: "rgba(0,0,0)" }}>
                     <center style={{ color: "rgb(243, 244, 246)", fontFamily: "Georgia, Arial", fontSize: 20 }}>929-925-4100&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;&nbsp;&nbsp;info@spareeye.com&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;&nbsp;&nbsp;428 Kiryas Sanz Avenue Lakewood, NJ 08701</center>
                 </div>
             </>
